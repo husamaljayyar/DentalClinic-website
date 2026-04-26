@@ -29,12 +29,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+
 }
 
 .btn {
@@ -76,6 +78,7 @@ a {
     display: flex;
     align-items: center;
     gap: 15px;
+
 }
 
 .btn {
@@ -105,6 +108,47 @@ a {
     font-size: 24px;
     background: none;
     border: none;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ddd !important;
+    border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+    .main-nav {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .main-nav.active {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        display: flex !important;
+    }
+
+    .mobile-only {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .mobile-only .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
 
 /*---------------- Hero Section ----------------*/
@@ -196,7 +240,6 @@ a {
     align-items: center;
     line-height: 30px;
     text-align: center;
-
 }
 
 .title-services {
@@ -211,7 +254,6 @@ a {
     justify-content: space-between;
     height: auto;
     gap: 10px;
-
 }
 
 @media (max-width: 800px) {
@@ -256,7 +298,7 @@ a {
     padding-bottom: 20px;
 }
 
-/*------------------Dental Solutions----------------------*/
+/*----------------Dental Solutions-----------------*/
 .dental-solutions {
     display: flex;
     flex-direction: column;
@@ -306,7 +348,7 @@ ul {
     color: #fff;
 }
 
-/*-------------------Dlaboratory Products----------------------*/
+/*----------------Dlaboratory Products------------------*/
 .dlaboratory-products {
     display: flex;
     flex-direction: column;
@@ -364,7 +406,7 @@ ul {
     height: 50px;
 }
 
-/*-------------------------------------------------------*/
+/*----------------------------------------------------*/
 .transformation-section {
     padding: 60px 20px;
     direction: rtl;
